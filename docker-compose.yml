@@ -4,9 +4,9 @@ services:
       context: ./backend
       dockerfile: py.Dockerfile
     working_dir: /app
-    command: python -m http.server 8000
+    command: python -m http.server 5000
     ports:
-      - "8000:8000"
+      - "5000:5000"
     volumes:
       - ./backend:/app
     
